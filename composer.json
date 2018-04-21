@@ -7,5 +7,11 @@
             "email": "miguel.alcaino@ogb.cl"
         }
     ],
-    "require": {}
+    "repositories": [
+        {"type": "composer", "url": "https://repo.packagist.com/miguelalcaino/"},
+        {"packagist.org": false}
+    ],
+    "require": {
+        "miguelalcaino/payment-gateway": "dev-master"
+    }
 }
