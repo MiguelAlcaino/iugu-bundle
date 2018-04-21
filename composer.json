@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "miguelalcaino/payment-gateway": "dev-master",
+        "miguelalcaino/payment-gateway": "^1.0",
         "iugu/iugu": "^1.0"
     }
 }
