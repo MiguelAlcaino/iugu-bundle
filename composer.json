@@ -12,6 +12,7 @@
         {"packagist.org": false}
     ],
     "require": {
-        "miguelalcaino/payment-gateway": "dev-master"
+        "miguelalcaino/payment-gateway": "dev-master",
+        "iugu/iugu": "^1.0"
     }
 }
