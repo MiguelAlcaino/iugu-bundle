@@ -1,0 +1,11 @@
+{
+    "name": "miguelalcaino/iugu-bundle",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "Miguel Alcaino",
+            "email": "miguel.alcaino@ogb.cl"
+        }
+    ],
+    "require": {}
+}

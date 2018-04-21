@@ -1,0 +1,6 @@
+parameters:
+    login_success_route: "widget_checkout"
+    login_template: "@@MindBodyPayments/Widget/login.html.twig"
+    require_service_id_in_login: false
+    iugu.token: ""
+    iugu.js_id: ""

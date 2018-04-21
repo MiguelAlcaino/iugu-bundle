@@ -1,0 +1,3 @@
+miguel_alcaino_iugu_homepage:
+    path:     /
+    defaults: { _controller: MiguelAlcainoIuguBundle:Default:index }
