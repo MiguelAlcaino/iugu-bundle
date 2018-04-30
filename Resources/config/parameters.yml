@@ -4,3 +4,5 @@ parameters:
     require_service_id_in_login: false
     iugu.token: ""
     iugu.js_id: ""
+    is_paid_in_cents: true
+    refund_status: 'refunded'
