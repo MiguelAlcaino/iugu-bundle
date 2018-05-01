@@ -9,7 +9,7 @@
     ],
     "require": {
         "miguelalcaino/payment-gateway": "^1.0",
-        "iugu/iugu": "dev-master"
+        "miguelalcaino/iugu": "^1.0"
     },
     "autoload": {
         "psr-4": {
