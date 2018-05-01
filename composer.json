@@ -10,5 +10,10 @@
     "require": {
         "miguelalcaino/payment-gateway": "^1.0",
         "iugu/iugu": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "MiguelAlcaino\\IuguBundle\\": ""
+        }
     }
 }
