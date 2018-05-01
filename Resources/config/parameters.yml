@@ -5,4 +5,4 @@ parameters:
     iugu.token: ""
     iugu.js_id: ""
     is_paid_in_cents: true
-    refund_status: 'refunded'
+    refunded_status: 'refunded'
