@@ -71,7 +71,7 @@ class PaymentService implements PaymentGatewayInterface
             ]
         ];
 
-        if($transactionRecord->getInstallments() != null){
+        if($transactionRecord->getInstallments() != null || $transactionRecord->getInstallments() != 1){
             $arrayRequest['months'] = $transactionRecord->getInstallments();
         }
 
