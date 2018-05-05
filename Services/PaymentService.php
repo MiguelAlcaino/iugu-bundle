@@ -61,7 +61,7 @@ class PaymentService implements PaymentGatewayInterface
     {
         \Iugu::setApiKey($this->iuguToken);
 
-        $result = \Iugu_Charge::create([
+        $arrayRequest = [
             'token' => $creditCardToken,
             'email' => $transactionRecord->getCustomer()->getEmail(),
             'items' => [
@@ -69,7 +69,13 @@ class PaymentService implements PaymentGatewayInterface
                 "quantity" => "1",
                 "price_cents" => $this->isPaidInCents ? $transactionItem->getPrice()*100 : $transactionItem->getPrice()
             ]
-        ]);
+        ];
+
+        if($transactionRecord->getInstallments() != null){
+            $arrayRequest['months'] = $transactionRecord->getInstallments();
+        }
+
+        $result = \Iugu_Charge::create($arrayRequest);
 
         if(!$result->success){
             $exception = new CreditCardChargeException();
