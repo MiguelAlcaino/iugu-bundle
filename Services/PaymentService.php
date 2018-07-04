@@ -31,7 +31,7 @@ class PaymentService implements PaymentGatewayInterface
     private $businessName;
 
     private $isPaidInCents;
-    
+
     private $refundStatus;
 
     /**
@@ -68,6 +68,10 @@ class PaymentService implements PaymentGatewayInterface
                 'description' => $transactionItem->getName(),
                 "quantity" => "1",
                 "price_cents" => $this->isPaidInCents ? $transactionItem->getPrice()*100 : $transactionItem->getPrice()
+            ],
+            'payer' => [
+                'cpf_cnpj' => $transactionRecord->getDocumentNumber(),
+                'name' => $transactionRecord->getCustomer()->getFirstName().' '.$transactionRecord->getCustomer()->getLastName()
             ]
         ];
 
